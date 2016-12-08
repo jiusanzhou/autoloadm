@@ -27,7 +27,6 @@ setup(
     author='John Zoe',
     author_email='jsz3@live.com',
     url='http://jiusanzhou.github.io',
-    packages=['autoloadm.py'],
     install_requires=requires,
     license='MIT',
     zip_safe=False,
