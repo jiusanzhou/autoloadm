@@ -28,6 +28,7 @@ setup(
     author_email='jsz3@live.com',
     url='http://jiusanzhou.github.io',
     install_requires=requires,
+    py_modules=['autoloadm'],
     license='MIT',
     zip_safe=False,
     classifiers=(
