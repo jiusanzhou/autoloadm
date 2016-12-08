@@ -3,7 +3,7 @@ Auto load module from sub directory
 """
 
 __title__ = 'autoLoad'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 __author__ = 'John Zoe'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2016 John Zoe'
