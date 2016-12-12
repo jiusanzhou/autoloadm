@@ -18,6 +18,8 @@ def loadM(src="m", start_with="_m_", end_with=".py", index_func="main", set_glob
     :return {} index_func dict, module_name -> index_func
     """
     import os
+    # make sure this is package dir
+    if not os.path.isfile('%s/__init__.py'%src): open('%s/__init__.py'%src, 'a').close()
     # get module from each file
     _ = map(lambda _: __import__("{0}.{1}".format(src, _[:-1*len(end_with)]), fromlist=[index_func]), 
         filter(lambda _: _.startswith(start_with) and _.endswith(end_with), os.listdir(src) if os.path.isdir(src) else []))
